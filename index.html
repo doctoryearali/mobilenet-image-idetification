@@ -1,0 +1,67 @@
+ 
+<html>
+  <head>
+    <title>Habib recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+     <h1>Habib Recognition</h1>
+      <br><br>
+
+      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+       Clock
+       <hr>
+       Pen
+       <hr>
+       Flower
+       <hr> 
+       Ahhasan Habib
+       <hr>
+       trophy
+       <hr>
+       power bank (blue)
+       <hr>
+       power bank (golden)
+       <hr>
+       charger+light
+       <hr>
+      <label>Webcam View - </label>
+      <div id="camera"></div>
+      <br><br>
+      <button id="capture_image_button" class="btn btn-danger" onclick="capture_image()">Capture Image</button>
+      <br><br>
+      
+      <div id="Result"></div>
+      
+      <br><br>
+   
+      <button id="identify_object_button" class="btn btn-danger" onclick="identify_object()">Identify Object</button>
+      <br>
+      <br>
+      <p style="font-size: 22px;" class="btn btn-danger">Object :  </p>
+      <h4 id="objects"></h4>
+      <br>
+      <br>
+      <p style="font-size: 22px;" class="btn btn-danger">Accuracy :  </p>
+      <h4 id="accuarcy"></h4>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 

@@ -1,0 +1,16 @@
+h1
+{
+font-family:Georgia;
+color:red;
+}
+body
+{
+  background-color:black;
+  color:red;
+}
+#camera,#Result
+{
+    border: 2px dashed white;
+    width:300px;
+    height:300px;
+}
